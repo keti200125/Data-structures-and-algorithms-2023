@@ -1,1 +1,1 @@
-# Data-structures-and-algorithms-2023
+# Структури от данни и алгоритми 
