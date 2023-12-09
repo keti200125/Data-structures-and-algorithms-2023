@@ -1,10 +1,11 @@
 #include <iostream>
 #include "linked-list-utils.h"
 
+//think
+
 void partition(LinkedListNode<int> *&head, int x)
 {
-    LinkedListNode<int> *it = head, *small = nullptr, *smallIt = nullptr, *big = nullptr,
-                        *bigIt = nullptr;
+    LinkedListNode<int> *it = head, *small = nullptr, *big = nullptr, *smallIt, *bigIt;
     while (it)
     {
         if (it->data < x)
@@ -12,7 +13,7 @@ void partition(LinkedListNode<int> *&head, int x)
             if (!small)
             {
                 small = it;
-                it = it->next; // 2
+                it = it->next; 
                 small->next = nullptr;
                 smallIt = small;
             }
