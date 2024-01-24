@@ -84,7 +84,7 @@ bool pathInGraph(const Graph &g, const std::string &path)
     return true;
 }
 
-void samePath(const Graph g, const Node<char> *r)
+void samePath(const Graph& g, const Node<char> *r)
 {
     std::vector<std::string> allPaths;
     std::string currPath = "";
