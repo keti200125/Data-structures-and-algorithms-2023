@@ -10,8 +10,7 @@ void addEdge(int v, int u, std::vector<std::list<int>> &g, bool isDirected = fal
     if (!isDirected)
     {
         g[u].push_back(v);
-    }
-}
+    }}
 
 std::vector<int> getPath(std::vector<int>& parent,int start, int end)
 {
@@ -46,10 +45,10 @@ std::vector<int> bfsShortestPath(std::vector<std::list<int>>& g,int start,int en
          
         visited[curr]=true;
 
-         /*
+         
         if(visited[curr])
             continue;
-            */
+            
         if(curr==end)
             break;
         
